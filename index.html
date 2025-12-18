@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Style SNS</title>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top">
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram Logo"/>
+            <input type="search" value="🔍 검색" id="search_bar"/>
+            <div id="top_icons">
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+        <div id="profile">
+            <div id="profile_pic">
+                <img class="circle_pic" src="image/profile.png" alt="Profile"/>
+            </div>
+            <div id="profile_info">
+                <div id="id">
+                    <span>Radiohead</span>
+                    <i class="fas fa-cog"></i> </div>
+                <button id="edit_button">프로필 편집</button> </div>
+        </div>
+
+        <div id="user_bio">
+            <strong id="userInfo">Radiohead</strong><br/>
+            <span id="summary">Psychedelic Rockband</span><br/>
+            <p id="profileDetail">
+                <a href="https://wasteheadquarters.com/links/radiohead">https://wasteheadquarters.com/links/radiohead</a>
+            </p>
+        </div>
+
+        <div id="highlight_area">
+            <button id="prev_btn" class="nav_btn" style="display: none;"><i class="fas fa-chevron-left"></i></button>
+            <div id="highlight_window">
+                <div id="highlight_list">
+                    <div class="highlight"><div class="highlight_pic"><img class="circle_pic" src="image/thom.jpg"/></div><div>Thom</div></div>
+                    <div class="highlight"><div class="highlight_pic"><img class="circle_pic" src="image/jonny.jpg"/></div><div>Jonny</div></div>
+                    <div class="highlight"><div class="highlight_pic"><img class="circle_pic" src="image/colin.jpg"/></div><div>Colin</div></div>
+                    <div class="highlight"><div class="highlight_pic"><img class="circle_pic" src="image/EOB.jpg"/></div><div>EOB</div></div>
+                    <div class="highlight"><div class="highlight_pic"><img class="circle_pic" src="image/philip.jpg"/></div><div>Philip</div></div>
+                </div>
+            </div>
+            <button id="next_btn" class="nav_btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div id="stat_bar">
+            <div class="stat">게시물<br/>297</div>
+            <div class="stat">팔로워<br/>441만</div>
+            <div class="stat">팔로우<br/>8</div>
+        </div>
+        <div id="sub_icons">
+            <div class="selected"><i class="fas fa-border-all"></i></div>
+            <div><i class="fas fa-film"></i></div>
+            <div><i class="far fa-play-circle"></i></div>
+            <div><i class="far fa-bookmark"></i></div>
+            <div><i class="fas fa-user-tag"></i></div>
+        </div>
+
+        <div id="thumnail_grid">
+            <img src="image/1.png"/><img src="image/2.png"/><img src="image/3.png"/><img src="image/4.png"/>
+            <img src="image/5.png"/><img src="image/6.png"/><img src="image/7.png"/><img src="image/8.png"/><img src="image/9.png"/>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+/* PC 화면 최적화 및 기본 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+/* 원형 이미지 */
+.circle_pic {
+    border: solid white 1px;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+/* 상단 바 그리드 */
+#top {
+    display: grid;
+    grid-template-columns: 4fr 7fr 5fr;
+    height: 60px;
+    align-items: center;
+    border-bottom: solid gray 0.1px;
+}
+
+#top img {
+    width: 85%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+#top input {
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    border: solid gray 1px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#top_icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+/* 프로필 영역 그리드 */
+#profile {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    padding: 20px;
+    align-items: center;
+}
+
+#profile_pic {
+    width: 80px;
+    height: 80px;
+}
+
+#profile_info {
+    padding-left: 20px;
+}
+
+#id {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button#edit_button {
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#user_bio {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+/* 하이라이트 슬라이더 */
+#highlight_area {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#highlight_window {
+    width: 100%;
+    overflow: hidden;
+}
+
+#highlight_list {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 125%; 
+}
+
+.highlight {
+    flex: 0 0 20%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.highlight_pic {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 8px;
+}
+
+/* 불투명 화살표 버튼 */
+.nav_btn {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.85); /* 불투명 배경 */
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+    color: #333;
+}
+
+#prev_btn {
+    left: 15px;
+}
+
+#next_btn {
+    right: 15px;
+}
+
+/* 통계 및 하단 바 */
+#stat_bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 0.1px solid gray;
+    border-bottom: 0.1px solid gray;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+#sub_icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.selected {
+    border-bottom: 2px solid black; /* 밑에 선 생성 */
+    margin-bottom: -0.1px; 
+}
+
+/* 게시물 */
+#thumnail_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    padding: 2px;
+}
+
+#thumnail_grid img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    background-color: #eee;
+    border-radius: 4px;
+}
